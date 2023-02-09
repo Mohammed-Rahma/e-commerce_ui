@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:test_ui/view/slider.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -29,8 +30,8 @@ class _WeCareState extends State<WeCare> {
                   Spacer(),
                   Image.asset(
                     'assets/images/img.png',
-                    height: 80,
-                    width: 80,
+                    height: 80.h,
+                    width: 80.w,
                   ),
                   Spacer(),
                   const Icon(
@@ -38,19 +39,19 @@ class _WeCareState extends State<WeCare> {
                     size: 30,
                   ),
                   Container(
-                    width: 10,
+                    width: 10.w,
                   )
                 ],
               ),
               SliderP(),
-              const SizedBox(height: 20),
+              SizedBox(height: 20.h),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: RichText(
                   textAlign: TextAlign.center,
                   text: TextSpan(
                     style: GoogleFonts.readexPro(
-                      fontSize: 18,
+                      fontSize: 18.sp,
                       fontWeight: FontWeight.w600,
                       color: Color(0xff000000),
                     ),
@@ -72,8 +73,8 @@ class _WeCareState extends State<WeCare> {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 20,
+              SizedBox(
+                height: 20.h,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -81,7 +82,7 @@ class _WeCareState extends State<WeCare> {
                   textAlign: TextAlign.center,
                   text: TextSpan(
                     style: GoogleFonts.readexPro(
-                      fontSize: 18,
+                      fontSize: 18.sp,
                       fontWeight: FontWeight.w600,
                       color: Color(0xff000000),
                     ),
@@ -106,19 +107,19 @@ class _WeCareState extends State<WeCare> {
                   children: [
                     Image.asset(
                       'assets/images/img_4.png',
-                      height: 68,
-                      width: 58,
+                      height: 68.h,
+                      width: 58.w,
                     ),
                     Image.asset(
                       'assets/images/img.png',
-                      height: 90,
-                      width: 90,
+                      height: 90.h,
+                      width: 90.w,
                     ),
                     const Spacer(),
                     Text(
                       ':للتواصل والإستفسار',
                       style: GoogleFonts.readexPro(
-                        fontSize: 15,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.w400,
                         color: Color(0xff1d3f79),
                       ),
@@ -132,7 +133,7 @@ class _WeCareState extends State<WeCare> {
                   '92219914',
                   textAlign: TextAlign.center,
                   style: GoogleFonts.readexPro(
-                    fontSize: 17,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -147,8 +148,8 @@ class _WeCareState extends State<WeCare> {
                     },
                     child: Image.asset(
                       'assets/images/img_5.png',
-                      height: 50,
-                      width: 50,
+                      height: 50.h,
+                      width: 50.w,
                     ),
                   ),
                   TextButton(
@@ -157,8 +158,8 @@ class _WeCareState extends State<WeCare> {
                     },
                     child: Image.asset(
                       'assets/images/img_6.png',
-                      height: 50,
-                      width: 50,
+                      height: 50.h,
+                      width: 50.w,
                     ),
                   ),
                   TextButton(
@@ -167,8 +168,8 @@ class _WeCareState extends State<WeCare> {
                     },
                     child: Image.asset(
                       'assets/images/img_7.png',
-                      height: 50,
-                      width: 50,
+                      height: 50.h,
+                      width: 50.w,
                     ),
                   )
                 ],
